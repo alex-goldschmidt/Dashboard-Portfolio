@@ -77,7 +77,7 @@
     font-size: 15px;
     background: orange;
     border-radius: 15px;
-    height: 200px;
+    height: 180px;
 }
 
 .update {
@@ -91,5 +91,5 @@ input {
 
 .trending {
     background: violet;
-    margin-top: 75px;
+    margin-top: 65px;
 }
