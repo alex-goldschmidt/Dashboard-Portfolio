@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
   }
 
   .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 4px;
   }
 
   .container div {
@@ -15,21 +15,31 @@
   }
 
   .header {
-    background: red;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     position: relative;
     padding: 20px;
   }
 
+  .header button {
+    border: none;
+    background: rgb(0, 162, 255);
+  }
+
+  button li {
+    color: white;
+  }
+
   .menu {
     position: inherit;
     margin-top: 10px;
+    margin-left: 30px;
   }
 
   .menu h1 {
     position: absolute;
     bottom: 0;
+    margin-left: 110px;
   }
 
   .menu ul {
@@ -38,17 +48,24 @@
     grid-template-columns: 0.2fr 0.2fr 0.2fr ;
     justify-content: flex-end;
     height: 50px;
-    gap: 10px;
     border-radius: 15px;
-    margin-left: 23px;
+    margin-left: 145px;
+    margin-top: 10px;
+  }
+
+  .menu img {
+    border-radius: 15px;
+    height: 72px;
+    position: absolute;
   }
 
   button {
     border-radius: 30px;
+    width: 100px;
   }
 
   .sidebar {
-    background: yellow;
+    background: rgb(0, 162, 255);
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -57,6 +74,18 @@
 .sidebar ul {
     display: grid;
     list-style-type: none;
+    color: white;
+    margin-bottom: 120px;
+}
+
+.sidebar li {
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+}
+
+img {
+    height: 20px;
 }
 
 .main {
@@ -65,6 +94,7 @@
     display: grid;
     grid-template-columns: 3fr 1.2fr;
     max-height: 100%;
+    background: lightgray;
 }
 
 .projects-area {
@@ -75,21 +105,57 @@
 
 .project{
     font-size: 15px;
-    background: orange;
+    background: white;
     border-radius: 15px;
     height: 180px;
+    border-left: 10px solid gold;
 }
 
-.update {
-    background: green;
+.project p {
+    font-size: 18px;
+}
+
+.project img {
+    float: right;
+    margin-top: 105px;
+    height: 40px;
 }
 
 input {
     border-radius: 30px;
-    width: 600px;
+    background: lightgray;
+    height: 35px;
+    border: 1px solid #00A2FF;
+    width: 700px;
+    font-size: 20px;
+}
+
+input#site-search {
+    padding: 8px;
+}
+
+.search {
+    height: 35px;
+    width: 50px;
+    color: white;
+}
+
+.top-announcements {
+    background: white;
+    border-radius: 15px;
 }
 
 .trending {
-    background: violet;
-    margin-top: 65px;
+    background: white;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.announcements h2 {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border: 1px solid gray;
 }
